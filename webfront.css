@@ -1,0 +1,297 @@
+﻿/* Schriftart ändern */
+/*
+.ipsTabPane > .navigation {
+	font-family: Calibri,HelveticaNeue,Helvetica,Arial,sans-serif;
+}
+
+body {
+	font-family: Calibri,HelveticaNeue,Helvetica,Arial,sans-serif;
+	font-size: 19px;
+}
+
+.ipsDWDReport .title {
+	font-family: Calibri,HelveticaNeue,Helvetica,Arial,sans-serif;
+}
+
+.ipsLogin > .pageTitle {
+	font-family: Calibri,HelveticaNeue,Helvetica,Arial,sans-serif;
+} */
+
+/* Logo austauschen */
+.ipsLogin>.logo {
+background-image: url(./img/logo_vision2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	height: calc(40% - 20px - 105px/2);
+	width: 100%;
+	top: 0;
+	left: 0;
+	margin-left: 0;
+	margin-top: 20px;
+}
+
+
+
+/* Farbe verändern */
+.ipsLogin {
+	background-color: #FFFFFF;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(./img/background.jpg);
+}
+
+.ipsLogin>.content>.configurators {
+	background-color: #2850a400;
+}
+
+.ipsWebFront {
+	background-color: #2850A4;
+}
+
+.ipsWebFront>.ipsTabPane>.navigation {
+	background-color: #0D528A;
+	border-color: #0D528A;
+	background-image: -webkit-linear-gradient(top, rgb(40,80,164) 0,rgb(4,81,140) 40px);
+}
+
+.ipsTabPane>.navigation {
+	background-color: #2850A4;
+	background-image: -webkit-linear-gradient(top, rgb(40,80,164,1) 0,rgb(0,105,180) 40px);
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2850A4;
+	color: #FFFFFF;
+}
+
+.ipsTabPane>.content {
+	background-color: #000;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(./img/background.jpg);
+}
+
+.ipsTabPane>.navigation>.scroll>.buttons>div {
+	opacity: 1;
+}
+
+.ipsTabPane>.navigation>.scroll>.buttons>div.active {
+	background-color: rgba(255,255,255,0.15);
+}
+
+.ipsCategory>.container {
+	background-color: #fff0;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #2850A4;
+	border-image: -webkit-linear-gradient(left,rgb(255,255,255) 50px,rgb(255,255,255),rgb(255,255,255));
+	border-image-slice: 1;
+	color: #000000;
+}
+
+.ipsCategory>.container.hasChildren {
+	background-color: #2850A4;
+	background-image: -webkit-linear-gradient(left,rgb(255,255,255),rgb(255,255,255),rgb(255,255,255));
+	border-width: 1px;
+	color: #FFFFFF;
+}
+
+.ipsCategory>.container.hasChildren>.content>.icon {
+	filter: invert(0);
+}
+
+.ipsCategory>.container>.childContainers {
+	background-color: #FFFFFF;
+	color: #787875;
+}
+
+.ipsCategory>.container .childContainers>div {
+	border-color: rgba(0,107,178,0.2);
+}
+
+.ipsCategory>.container .content .visual>.enum {
+	padding: 2px 0 0px;
+}
+
+.ipsCategory>.container .content .visual>.enum>div {
+	background-image: -webkit-linear-gradient(bottom,rgba(255,255,255,0) 0,rgba(255,255,255,0.5) 100%);
+	background-color: #CCCCCC;
+	border-style: none;
+	color: #787875;
+	filter: grayscale();
+}
+
+.ipsCategory>.container .content .visual>.enum>.selected {
+	filter: none;
+	background-image: -webkit-linear-gradient(bottom,rgba(255,255,255,0) 0,rgba(255,255,255,0.25) 100%);
+	background-color: #2850A4;
+	border-style: none;
+	color: #FFFFFF;
+}
+
+.ipsCategory>.container .content .visual>.selector {
+	padding: 2px 0 0px;
+}
+
+.ipsCategory>.container .content .visual>.selector>div {
+	background-image: -webkit-linear-gradient(bottom,rgba(255,255,255,0) 0,rgba(255,255,255,0.5) 100%);
+	background-color: #CCCCCC;
+	border-style: none;
+	color: #787875;
+	min-height: 29px;
+}
+
+.ipsCategory>.container .content .visual>.selector>.selected {
+	background-image: -webkit-linear-gradient(bottom,rgba(255,255,255,0) 0,rgba(255,255,255,0.25) 100%);
+	background-color: #2850A4;
+	border-style: none;
+	color: #FFFFFF;
+}
+
+.ipsCategory > .container .content .visual > .text > input[type=text] {
+	color: #787875;
+}
+
+.ipsCategory>.container .content .visual>.text.colored {
+	background-image: -webkit-linear-gradient(bottom,rgba(255,255,255,0) 0,rgba(255,255,255,0.25) 100%);
+	color: #FFFFFF;
+	border-style: none;
+}
+
+/* Korrektur Prozentzahl- und Sliderposition */
+.ipsCategory>.container .content .visual>.slider {
+	margin-right: 60px;
+}
+.ipsCategory>.container .content .visual>.slider>div>.text {
+	right: -55px;
+}
+
+.ipsCategory>.container .content .visual>.slider>div>.background {
+	background-image: -webkit-linear-gradient(bottom,rgba(255,255,255,0) 0,rgba(255,255,255,0.5) 100%);
+	background-color: #CCCCCC;
+	border-style: none;
+}
+
+.ipsCategory>.container .content .visual>.slider>div>.bar {
+	background-image: -webkit-linear-gradient(bottom,rgba(255,255,255,0) 0,rgba(255,255,255,0.5) 100%);
+	border-style: none;
+	background-color: #787875;
+}
+
+.ipsCategory>.container .content .icon {
+	filter: invert(0.6);
+}
+
+/* Invertieren von Symbolen */
+.ipsCategory>.container .content .link>.keyboardLink, 
+.ipsCategory>.container .content .link>.chartLink, 
+.ipsCategory>.container .content .link>.timerLink, 
+.ipsCategory>.container .content .link>.runLink, 
+.ipsCategory>.container .content .link>.colorLink, 
+.ipsCategory>.container .content .link>.enumLink {
+	filter: invert(0.6);
+}
+
+.ipsDialog>div {
+	color: #787875;
+	background-color: #FFFFFF;
+	border-color: #2850A4;
+}
+
+.ipsDialog>div>.title {
+	color: #FFFFFF;
+	background-color: #2850A4;
+	width: 98%;
+	padding: 10px 0 6px 2%;
+}
+
+.ipsDialog.ipsEditorDialog>div>.content>ol>li>input[type=text], 
+.ipsDialog.ipsEditorDialog>div>.content>ol>li>select, 
+.ipsDialog.ipsEditorDialog>div>.content>select {
+	border: 1px solid rgba(0,107,178,0.2);
+	color: #787875;
+}
+
+.ipsDialog.ipsEditorDialog>div>.content>ol>li>select>option, 
+.ipsDialog.ipsEditorDialog>div>.content>select>option {
+	background-color: #FFFFFF;
+}
+
+.ipsDialog.ipsEditorDialog>div>.remove, 
+.ipsDialog.ipsEditorDialog>div>.save, 
+.ipsDialog.ipsEditorSelectDialog>div>.content .treeIcon, 
+.ipsDialog.ipsEditorSelectDialog>div>.content label {
+	filter: invert(0.6);
+}
+
+.ipsDialog.ipsCirclesliderDialog svg text {
+	fill: #787875;
+}
+
+.ipsDialog.ipsCirclesliderDialog .backgroundCircle {
+	fill: #FFFFFF;
+}
+
+.ipsDialog.ipsCirclesliderDialog .progressBar {
+	stroke: #2850A4;
+}
+
+.ipsDialog.ipsCirclesliderDialog .backgroundStripesCircle {
+	stroke: #787875;
+}
+
+.ipsDialog.ipsCirclesliderDialog .sliderHandle {
+	fill: #2850A4;
+	stroke: grey;
+}
+
+.ipsDialog.ipsChartDialog>div>.buttons>.prev, 
+.ipsDialog.ipsChartDialog>div>.buttons>.next {
+	filter: invert(0.6);
+}
+
+.ipsDialog.ipsChartDialog>div>.topRightBox {
+	color: #FFFFFF;
+}
+
+.ipsDialog.ipsEventDialog>.ipsScheduleDialog>.content {
+	filter: invert(1);
+	color: #FFFFFF;
+}
+
+.ipsDialog.ipsScheduleEntryDialog>div>.buttons, 
+.ipsDialog.ipsMailDialog>div>.buttons, 
+.ipsDialog.Dialog>div>.buttons, 
+.ipsDialog.ipsChartDialog>div>.buttons {
+	filter: invert(0.6);
+}
+
+.ipsDialog.ipsEventDialog>div>.content>.outerCenter>.center>.linesContainer>.touchContainer>.sliderContainer>.slider {
+	filter: invert(1);
+}
+
+.ipsDialog.ipsEventDialog .buttons, 
+.ipsDialog.ipsDateTimeDialog .buttons {
+	filter: invert(0.6);
+}
+.ipsScheduleEntryDialog .leftContainer {
+	filter: invert(0.6);
+}
+.ipsScheduleEntryDialog .rightContainer {
+	filter: invert(1);
+}
+
+.ipsDialog.ipsScheduleEntryDialog .leftSide .colorSphere {
+	filter: invert(1);
+}
+
+div.ipsChart>svg>g.graphs>g.background>g>path, 
+div.ipsChart>svg>g.grid>line.gridLine, 
+div.ipsChart>svg>g.graphs>g.outline>g>path {
+	stroke: #787875;
+}
+
+div.ipsChart>svg>g.axis>g.labels>text {
+	fill: #000000;
+}
