@@ -83,7 +83,7 @@ background-image: url(./img/logo_vision2.png);
 .ipsCategory>.container {
 	background-color: #fff0;
 	border-style: solid;
-	border-width: 10px;
+	border-width: 0px;
 	border-color: #2850A4;
 	border-image: -webkit-linear-gradient(left,rgb(255,255,255) 50px,rgb(255,255,255),rgb(255,255,255));
 	border-image-slice: 1;
